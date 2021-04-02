@@ -1,0 +1,25 @@
+<div>
+
+    <div>
+        <span class="h1">Lista de Tarefas</span>
+    </div>
+    <div ng-controller="TodoListCtrl as todolist">
+        <ul>
+            <li ng-repeat="todo in todolist.todos">
+                <div class="d-flex flex-row align-items-center">
+                <div class="p-2 flex-grow-1">
+                    <span class="h3">{{todo.title}}</span>                
+                </div>
+                <div class="p-2">
+                    <a class="btn btn-primary" role="button" href="#!/todo/{{todo.id}}">Editar</a>
+                </div>
+            </div>
+            </li>
+            
+        </ul>
+        <a class="btn btn-primary" role="button" href="#!/todo/new">Adicionar</a>
+    </div>
+
+
+
+</div>

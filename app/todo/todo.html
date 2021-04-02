@@ -1,0 +1,9 @@
+<div>
+<p>{{operacao}}</p>
+<div ng-controller="TodoCtrl">
+    <p>{{todo.id}} - {{todo.title}}</p>
+    <li ng-repeat="item in todo.todoList">
+        <span>{{item.id}} - {{item.text}} - {{item.date_time}} - {{item.checked}}</span>
+    </li> 
+</div>
+</div>
